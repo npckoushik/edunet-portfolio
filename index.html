@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushik's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Koushik's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="welcome-section">
+        <div class="welcome-content">
+            <p class="welcome-text">Welcome to My Portfolio</p>
+            <p class="welcome-subtext">Hi! I'm Koushik, currently in my third year of studying Computer Science and Engineering at SRM AP University. Take a look at my work and skills below.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-section">
+            <p class="about-text">
+                I am currently in my third year of pursuing a B.Tech in Computer Science and Engineering at SRM AP University. With a strong passion for software development and web technologies, I've cultivated a broad range of skills during my studies. My proficiency spans HTML, CSS, JavaScript, MySQL, C++, and Python, all of which I have applied to numerous projects and coursework. I am committed to honing my abilities and keeping pace with the latest industry advancements. Discover my portfolio to see my projects and accomplishments in detail.
+            </p>
+            <img src="1.jpg" alt="About Me Image" class="about-img">
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fab fa-html5 fa-3x"></i> HTML</li>
+            <li><i class="fab fa-css3-alt fa-3x"></i> CSS</li>
+            <li><i class="fab fa-js fa-3x"></i> JavaScript</li>
+            <li><i class="fas fa-database fa-3x"></i> MySQL</li>
+            <li><i class="fab fa-cuttlefish fa-3x"></i> C++</li>
+            <li><i class="fab fa-python fa-3x"></i> Python</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <a href="https://npckoushik.github.io/NetflixUiClone/" target="_blank" class="project">
+                <i class="fas fa-clone project-icon fa-3x"></i>
+                <h3>Netflix UI Clone</h3>
+                <p>A clone of the Netflix UI built using HTML and CSS.</p>
+            </a>
+            <a href="https://npckoushik.github.io/image-search-engine/" target="_blank" class="project">
+                <i class="fas fa-search project-icon fa-3x"></i>
+                <h3>Image Search Engine</h3>
+                <p>An image search engine developed using HTML, CSS, and JavaScript.</p>
+            </a>
+            <a href="https://npckoushik.github.io/qr-code-generator/" target="_blank" class="project">
+                <i class="fas fa-qrcode project-icon fa-3x"></i>
+                <h3>QR Code Generator</h3>
+                <p>A QR code generator built using HTML, CSS, and JavaScript.</p>
+            </a>
+            <a href="https://npckoushik.github.io/memory-game/" target="_blank" class="project">
+                <i class="fas fa-gamepad project-icon fa-3x"></i>
+                <h3>Memory Game</h3>
+                <p>A memory game developed using HTML, CSS, and JavaScript.</p>
+            </a>
+        </div>
+    </section>
+    
+    <section id="services" class="section">
+        <h2>Services Offered</h2>
+        <ul class="services-list">
+            <li><i class="fas fa-code fa-3x"></i> Web Development</li>
+            <li><i class="fas fa-chalkboard-teacher fa-3x"></i> Programming Tutoring</li>
+            <li><i class="fas fa-database fa-3x"></i> Database Management</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Information</h2>
+        <p>Email: srisaikoushik_avula@srmap.edu.in</p>
+        <div class="social-icons">
+            <a href="https://github.com/npcKoushik" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://in.linkedin.com/in/koushikavula" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:srisaikoushik_avula@srmap.edu.in"><i class="fas fa-envelope"></i></a>
+        </div>
+        <button id="contact-toggle" aria-label="Get in touch">Get in Touch</button>
+        <div id="contact-form-container" class="contact-form-hidden">
+
+            
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="error-message" style="color: red;"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Koushik. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
